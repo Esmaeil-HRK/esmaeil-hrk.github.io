@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav .navbar-brand {
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+
+#home {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#home h1 {
+    margin: 0;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#about img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    margin-bottom: 10px;
+}
+
+.project {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#contact {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact a {
+    color: #ff5733;
+    text-decoration: none;
+}
