@@ -14,7 +14,7 @@ body, html {
 }
 
 header {
-    background: #007BFF;
+    background: #3a4047;
     color: #ffffff;
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 .banner {
-    background: #0056b3;
+    background: #3a4047;
     color: #ffffff;
     padding: 60px 0;
     text-align: center;
