@@ -1,95 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Esmaeil Alkhazmi | Software Developer & Electrical Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esmaeil H. Alkhazmi - Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+      .section-title {
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+      .skill-item {
+        background-color: #f8f9fa;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+      .timeline-item {
+        border-left: 2px solid #007bff;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        position: relative;
+      }
+      .timeline-item::before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color: #007bff;
+        border-radius: 50%;
+        position: absolute;
+        left: -8px;
+        top: 0;
+      }
+      .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #007bff;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Esmaeil H. Alkhazmi</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#honors">Honors & Activities</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
         <div class="container">
-            <h1>  Esmaeil H. Alkhazmi</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <!-- <img src="https://avatars.githubusercontent.com/u/125511981?v=4" alt="Esmaeil H. Alkhazmi" class="profile-image mb-4"> -->
+            <h1 class="display-4">Esmaeil H. Alkhazmi</h1>
+            <p class="lead">Software Developer & Data Analyst</p>
+            <div class="mt-3">
+                <a href="mailto:ealkhazmi@gmail.com" class="btn btn-light me-2"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="btn btn-light me-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank" class="btn btn-light me-2"><i class="fab fa-github"></i> GitHub</a>
+            </div>
         </div>
     </header>
-    <section id="home" class="banner">
-        <div class="container">
-            <h2>Software Developer & Electrical Engineer</h2>
-            <p>
-                I'm a dynamic expert blending Python programming, data analytics, and electrical engineering skills to pioneer innovative technological solutions.</p>
+
+    <main class="container mt-5">
+      <section id="about" class="mb-5">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          A skilled software developer and data analyst with expertise in
+          Python, Software Development, and cloud technologies like AWS. Proven
+          ability to deliver innovative solutions, from OCR-based data
+          conversion tools to IoT monitoring systems. Adept at leveraging
+          cutting-edge technologies to drive operational excellence and enhance
+          user experiences. A passionate mentor dedicated to knowledge sharing
+          and community growth.
+        </p>
+      </section>
+
+      <section id="experience" class="mb-5">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline-item">
+          <h4>Dell Data Science and Big Data Analytics v2 Trainee</h4>
+          <p class="text-muted">LATI | May 2024 - Present</p>
+          <ul>
+            <li>Intro to Programming with Python</li>
+            <li>Math and Probability Theory</li>
+            <li>Intro to AI and Machine Learning</li>
+            <li>Pandas, NumPy, and Advanced AI with Python</li>
+            <li>Training with Dell</li>
+          </ul>
         </div>
-    </section>
-    <section id="about" class="info-section">
-        <div class="container">
-            <img src="https://avatars.githubusercontent.com/u/125511981?v=4" alt="Esmaeil Alkhazmi">
-            <div>
-                <h2>About Me</h2>
-                <p>As Esmaeil H. Alkhazmi, I merge my electrical engineering acumen with a fervor for software development, striving for innovation in technology. With a strong grasp on Python and data analysis, I am dedicated to applying my knowledge creatively to solve complex challenges. My ambition is to contribute significantly to the tech industry, constantly learning and evolving.</p>
+        <div class="timeline-item">
+          <h4>Software Developer & Data Analyst</h4>
+          <p class="text-muted">Sarab.Tech | January 2024 - April 2024</p>
+          <ul>
+            <li>Led data cleanup and analysis, enhancing dataset integrity</li>
+            <li>
+              Developed data classification algorithms for user data insights
+            </li>
+            <li>
+              Improved UI/UX for a bank's prepaid voucher card system using
+              Angular
+            </li>
+            <li>Created a user management dashboard with Laravel</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h4>Freelance Specialist in Software Development</h4>
+          <p class="text-muted">January 2024 - Present</p>
+          <ul>
+            <li>
+              Led the development of an OCR-based project converting handwritten
+              tables to CSV using AWS and Flask
+            </li>
+            <li>
+              Created a high-accuracy image recognition web app with machine
+              learning
+            </li>
+            <li>
+              Delivered a professional, visually appealing website for a bakery
+              brand
+            </li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h4>Research & Development Intern</h4>
+          <p class="text-muted">Rai Labs | October 2023 - January 2024</p>
+          <ul>
+            <li>
+              Developed a monitoring system with the TIG stack for environmental
+              control
+            </li>
+            <li>
+              Created a digital logbook system for an Oil and Gas plant,
+              improving operational transparency
+            </li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h4>Research & Development Intern</h4>
+          <p class="text-muted">
+            Ampere for Smart Systems | June 2022 - July 2023
+          </p>
+          <ul>
+            <li>
+              Designed a sensor data integration solution for real-time
+              analytics and historical reports
+            </li>
+            <li>
+              Developed a VSD controller using Modbus for remote monitoring via
+              LoRaWAN
+            </li>
+            <li>
+              Contributed to a smart irrigation system project using IoT
+              technologies
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="mb-5">
+        <h2 class="section-title">Skills</h2>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">
+              Python (Flask, FastAPI, Streamlit, Pandas)
             </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">AWS (EC2, Textract, IoT Core)</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">Angular</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">Vue.js</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">Laravel</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">IoT Technologies</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">Data Analysis</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">Machine Learning</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">TensorFlow</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">HTML5 / CSS3 / JavaScript</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">Bootstrap</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">InfluxDB</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">Grafana</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">MongoDB</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">Docker</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">ESP32 / Arduino</div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="skill-item">LoRaWAN</div>
+          </div>
+      </section>
+
+      <section id="education" class="mb-5">
+        <h2 class="section-title">Education</h2>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              B.S. Electrical and Electronics Engineering
+            </h4>
+            <p class="card-text">University of Benghazi, Benghazi, Libya</p>
+            <p class="card-text"><strong>GPA:</strong> 3.71</p>
+            <p class="card-text"><strong>Graduation Year:</strong> 2023</p>
+          </div>
         </div>
-    </section>
-    <section id="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <div>
-                <h3>Software Developer | Data Analysis Intern - Sarab.Tech</h3>
-                <p>Key projects include comprehensive data cleanup and analysis, utilizing Python to enhance data integrity and decision-making processes.</p>
-            </div>
-            <div>
-                <h3>Freelance Specialist in Python Development</h3>
-                <p>Developed Python-based OCR applications, streamlined data processing, and crafted engaging digital content.</p>
-            </div>
-            <div>
-                <h3>Research & Development Intern - Rai Labs & Ampere for Smart Systems</h3>
-                <p>Led the development of monitoring systems, digital logbook systems, and cloud-based applications to improve operational efficiency and data accessibility.</p>
-            </div>
-        </div>
-    </section>
-    <section id="skills" class="bg-light">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul class="skill-list">
-                <li>Programming: Python, Flutter</li>
-                <li>Data Analysis: Python libraries, MongoDB, InfluxDB</li>
-                <li>Web Development: Streamlit, Flask</li>
-                <li>Machine Learning: TensorFlow, PyTorch</li>
-                <li>Hardware: Arduino, ESP32</li>
-                <li>Databases: MongoDB, InfluxDB</li>
-                <li>Design: Adobe Photoshop, Canva</li>
-            </ul>
-        </div>
-    </section>
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <p>B.S Electrical and Electronics Engineering, University of Benghazi - GPA: 3.71 (2023)</p>
-        </div>
-    </section>
-    <section id="contact" class="bg-light">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:ealkhazmi@gmail.com">ealkhazmi@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/esmaeil-hesham">View Profile</a></p>
-            <p>Github: <a href="https://github.com/Esmaeil-HRK">View Profile</a></p>
-            <p>CV: <a href="https://drive.google.com/file/d/1DbeVv0eNKLNm_ctUeKNnDEJlz1BQFtEf/view?usp=sharing">View CV</a></p>
-            <p>Phone: (+218) 92 458-4263</p>
-            <p>Location: Benghazi, Libya</p>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>© 2024 Esmaeil H. Alkhazmi. All rights reserved.</p>
-        </div>
+      </section>
+
+      <section id="honors" class="mb-5">
+        <h2 class="section-title">Honors & Activities</h2>
+        <ul class="list-group">
+          <li class="list-group-item">
+            Published an academic paper on LoRaWAN IoT network deployment (IEEE
+            ICSC2023)
+          </li>
+          <li class="list-group-item">
+            Recognized for exceptional academic performance, ranking among the
+            top five graduates
+          </li>
+          <li class="list-group-item">
+            Represented the university at international conferences (Arab
+            Universities Confederation, IAC)
+          </li>
+          <li class="list-group-item">
+            Volunteered as a Lab Collaborator, guiding students in laboratory
+            experiments
+          </li>
+          <li class="list-group-item">
+            Published a multivariable calculus calculator app on Google Play
+          </li>
+          <li class="list-group-item">
+            Participated in Huawei's Seeds for the Future program, gaining ICT
+            and teamwork skills
+          </li>
+          <li class="list-group-item">
+            Excelled in cross-cultural communication through the Soliya Connect
+            Express program
+          </li>
+          <li class="list-group-item">
+            Created and managed Telegram study groups for over 500 students
+          </li>
+          <li class="list-group-item">
+            Delivered a session on advanced prompt engineering for AI tools at
+            Google Developer Student Club
+          </li>
+          <li class="list-group-item">
+            Speaker at Libyan National Technology Day "Smart Benghazi:
+            Harnessing IoT for a Brighter Future," discussing the growth of IoT,
+            benefits for smart cities
+          </li>
+          <li class="list-group-item">
+            Conducted a workshop titled "Mastering Prompt Engineering:
+            Leveraging AI for Your Engineering Projects" at the Engineering Expo
+            101, guiding students on effective use of AI tools for project
+            development
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="bg-light text-center py-3 mt-5">
+      <div class="container">
+        <p>&copy; 2024 Esmaeil H. Alkhazmi. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Add smooth scrolling to nav links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
