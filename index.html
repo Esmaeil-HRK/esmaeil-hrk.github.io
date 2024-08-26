@@ -18,23 +18,27 @@
         line-height: 1.6;
         color: #333;
       }
+
       .section-title {
         border-bottom: 2px solid #007bff;
         padding-bottom: 10px;
         margin-bottom: 20px;
       }
+
       .skill-item {
         background-color: #f8f9fa;
         padding: 10px;
         margin: 5px;
         border-radius: 5px;
       }
+
       .timeline-item {
         border-left: 2px solid #007bff;
         padding-left: 20px;
         margin-bottom: 20px;
         position: relative;
       }
+
       .timeline-item::before {
         content: "";
         width: 15px;
@@ -45,15 +49,27 @@
         left: -8px;
         top: 0;
       }
+
       .profile-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #007bff;
-        }
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #007bff;
+      }
+
+      /* Added Styles */
+      .certificate-item {
+        margin-bottom: 20px;
+      }
+
+      .certificate-item .card-header {
+        background-color: #007bff;
+        color: white;
+      }
     </style>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
@@ -78,6 +94,9 @@
               <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#certifications">Certifications</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#education">Education</a>
             </li>
             <li class="nav-item">
@@ -89,58 +108,101 @@
     </nav>
 
     <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <!-- <img src="https://avatars.githubusercontent.com/u/125511981?v=4" alt="Esmaeil H. Alkhazmi" class="profile-image mb-4"> -->
-            <h1 class="display-4">Esmaeil H. Alkhazmi</h1>
-            <p class="lead">Software Developer & Data Analyst</p>
-            <div class="mt-3">
-                <a href="mailto:ealkhazmi@gmail.com" class="btn btn-light me-2"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://www.linkedin.com/in/esmaeil-hesham" target="_blank" class="btn btn-light me-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/esmaeil-HRK" target="_blank" class="btn btn-light me-2"><i class="fab fa-github"></i> GitHub</a>
-            </div>
+      <div class="container">
+        <!-- You can add your image here -->
+        <!-- <img src="your-image.jpg" alt="Esmaeil H. Alkhazmi" class="profile-image mb-4"> -->
+        <h1 class="display-4">Esmaeil H. Alkhazmi</h1>
+        <p class="lead">Software Developer & Data Analyst</p>
+        <div class="mt-3">
+          <a href="mailto:ealkhazmi@gmail.com" class="btn btn-light me-2">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+          <a
+            href="https://www.linkedin.com/in/esmaeil-hesham"
+            target="_blank"
+            class="btn btn-light me-2"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a
+            href="https://github.com/esmaeil-HRK"
+            target="_blank"
+            class="btn btn-light me-2"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <!-- Add your portfolio link if you have one -->
+          <!-- <a href="your-portfolio-link" target="_blank" class="btn btn-light"><i class="fas fa-briefcase"></i> Portfolio</a> -->
         </div>
+      </div>
     </header>
 
     <main class="container mt-5">
       <section id="about" class="mb-5">
         <h2 class="section-title">About Me</h2>
         <p>
-          A skilled software developer and data analyst with expertise in
-          Python, Software Development, and cloud technologies like AWS. Proven
-          ability to deliver innovative solutions, from OCR-based data
-          conversion tools to IoT monitoring systems. Adept at leveraging
-          cutting-edge technologies to drive operational excellence and enhance
-          user experiences. A passionate mentor dedicated to knowledge sharing
-          and community growth.
+          A skilled software developer and data analyst with expertise in Python,
+          Software Development, and cloud technologies like AWS. Proven ability
+          to deliver innovative solutions, from OCR-based data conversion tools
+          to IoT monitoring systems. Adept at leveraging cutting-edge
+          technologies to drive operational excellence and enhance user
+          experiences. A passionate mentor dedicated to knowledge sharing and
+          community growth. Recognized for exceptional academic performance and
+          international collaboration.
         </p>
       </section>
 
       <section id="experience" class="mb-5">
         <h2 class="section-title">Work Experience</h2>
         <div class="timeline-item">
-          <h4>Dell Data Science and Big Data Analytics v2 Trainee</h4>
-          <p class="text-muted">LATI | May 2024 - Present</p>
+          <h4>Coordinator of Digital Services</h4>
+          <p class="text-muted">
+            Tanmia360 (Volunteer) | July 2024 - Present
+          </p>
           <ul>
-            <li>Intro to Programming with Python</li>
-            <li>Math and Probability Theory</li>
-            <li>Intro to AI and Machine Learning</li>
-            <li>Pandas, NumPy, and Advanced AI with Python</li>
-            <li>Training with Dell</li>
+            <li>Developed a room reservation system for coworking spaces.</li>
+            <li>
+              Managed and administered Microsoft 365, including email
+              registration, licensing, and technical support.
+            </li>
+            <li>
+              Obtained Canva Premium as a non-profit organization, created
+              accounts, and promoted creativity with Canva Teams.
+            </li>
+            <li>
+              Raised awareness about issues with the old paper-based systems
+              and proposed digital transformation solutions.
+            </li>
+            <li>
+              Conducted a training workshop on prompt engineering and
+              leveraging AI tools for enhancing work efficiency.
+            </li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h4>Dell Data Science and Big Data Analytics Trainee</h4>
+          <p class="text-muted">LATI | May 2024 - June 2024</p>
+          <ul>
+            <li>Intro to Programming with Python.</li>
+            <li>Math and Probability Theory.</li>
+            <li>Intro to AI and Machine Learning.</li>
+            <li>Pandas, NumPy, and Advanced AI with Python.</li>
+            <li>Training with Dell.</li>
           </ul>
         </div>
         <div class="timeline-item">
           <h4>Software Developer & Data Analyst</h4>
-          <p class="text-muted">Sarab.Tech | January 2024 - April 2024</p>
+          <p class="text-muted">Sarab Tech | January 2024 - April 2024</p>
           <ul>
-            <li>Led data cleanup and analysis, enhancing dataset integrity</li>
+            <li>Led data cleanup and analysis, enhancing dataset integrity.</li>
             <li>
-              Developed data classification algorithms for user data insights
+              Developed data classification algorithms for user data insights.
             </li>
             <li>
               Improved UI/UX for a bank's prepaid voucher card system using
-              Angular
+              Angular.
             </li>
-            <li>Created a user management dashboard with Laravel</li>
+            <li>Created a user management dashboard with Laravel.</li>
           </ul>
         </div>
         <div class="timeline-item">
@@ -149,15 +211,15 @@
           <ul>
             <li>
               Led the development of an OCR-based project converting handwritten
-              tables to CSV using AWS and Flask
+              tables to CSV using AWS and Flask.
             </li>
             <li>
               Created a high-accuracy image recognition web app with machine
-              learning
+              learning.
             </li>
             <li>
               Delivered a professional, visually appealing website for a bakery
-              brand
+              brand.
             </li>
           </ul>
         </div>
@@ -167,11 +229,11 @@
           <ul>
             <li>
               Developed a monitoring system with the TIG stack for environmental
-              control
+              control.
             </li>
             <li>
               Created a digital logbook system for an Oil and Gas plant,
-              improving operational transparency
+              improving operational transparency.
             </li>
           </ul>
         </div>
@@ -183,15 +245,15 @@
           <ul>
             <li>
               Designed a sensor data integration solution for real-time
-              analytics and historical reports
+              analytics and historical reports.
             </li>
             <li>
               Developed a VSD controller using Modbus for remote monitoring via
-              LoRaWAN
+              LoRaWAN.
             </li>
             <li>
               Contributed to a smart irrigation system project using IoT
-              technologies
+              technologies.
             </li>
           </ul>
         </div>
@@ -253,6 +315,95 @@
           <div class="col-md-4 mb-3">
             <div class="skill-item">LoRaWAN</div>
           </div>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section id="certifications" class="mb-5">
+        <h2 class="section-title">Certifications</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="certificate-item">
+              <div class="card">
+                <div class="card-header">Dell</div>
+                <div class="card-body">
+                  <ul>
+                    <li>
+                      Data Scientist and Big Data Analytics Foundations
+                    </li>
+                    <li>GenAI Foundation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="certificate-item">
+              <div class="card">
+                <div class="card-header">Meta</div>
+                <div class="card-body">
+                  <ul>
+                    <li>Databases - Python</li>
+                    <li>Version Control</li>
+                    <li>Introduction to Back-End Development</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="certificate-item">
+              <div class="card">
+                <div class="card-header">Mimo</div>
+                <div class="card-body">
+                  <ul>
+                    <li>HTML</li>
+                    <li>SQL</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="certificate-item">
+              <div class="card">
+                <div class="card-header">Sololearn</div>
+                <div class="card-body">
+                  <ul>
+                    <li>Python</li>
+                    <li>Angular</li>
+                    <li>Coding for Data</li>
+                    <li>Tech for Everyone</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="certificate-item">
+              <div class="card">
+                <div class="card-header">Data Camp</div>
+                <div class="card-body">
+                  <ul>
+                    <li>Understanding Prompt Engineering</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="certificate-item">
+              <div class="card">
+                <div class="card-header">Other</div>
+                <div class="card-body">
+                  <ul>
+                    <li>
+                      ION+: 70-hour Mobile Development Bootcamp with Flutter
+                      Framework
+                    </li>
+                    <li>Tanmia360: Strategic Management Certification</li>
+                    <li>Influx Data: InfluxDB Essentials Badge</li>
+                    <li>
+                      EF SET: C2 Proficient Level in EF SET English Test
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="education" class="mb-5">
@@ -281,10 +432,6 @@
             top five graduates
           </li>
           <li class="list-group-item">
-            Represented the university at international conferences (Arab
-            Universities Confederation, IAC)
-          </li>
-          <li class="list-group-item">
             Volunteered as a Lab Collaborator, guiding students in laboratory
             experiments
           </li>
@@ -300,13 +447,6 @@
             Express program
           </li>
           <li class="list-group-item">
-            Created and managed Telegram study groups for over 500 students
-          </li>
-          <li class="list-group-item">
-            Delivered a session on advanced prompt engineering for AI tools at
-            Google Developer Student Club
-          </li>
-          <li class="list-group-item">
             Speaker at Libyan National Technology Day "Smart Benghazi:
             Harnessing IoT for a Brighter Future," discussing the growth of IoT,
             benefits for smart cities
@@ -317,13 +457,17 @@
             101, guiding students on effective use of AI tools for project
             development
           </li>
+          <li class="list-group-item">
+            Delivered a session on advanced prompt engineering for AI tools at
+            Google Developer Student Club
+          </li>
         </ul>
       </section>
     </main>
 
     <footer class="bg-light text-center py-3 mt-5">
       <div class="container">
-        <p>&copy; 2024 Esmaeil H. Alkhazmi. All rights reserved.</p>
+        <p>© 2024 Esmaeil H. Alkhazmi. All rights reserved.</p>
       </div>
     </footer>
 
