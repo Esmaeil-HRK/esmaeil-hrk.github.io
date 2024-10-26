@@ -1,487 +1,476 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" class="scroll-smooth">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Esmaeil H. Alkhazmi - Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <style>
-      body {
-        font-family: "Arial", sans-serif;
-        line-height: 1.6;
-        color: #333;
-      }
-
-      .section-title {
-        border-bottom: 2px solid #007bff;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-      }
-
-      .skill-item {
-        background-color: #f8f9fa;
-        padding: 10px;
-        margin: 5px;
-        border-radius: 5px;
-      }
-
-      .timeline-item {
-        border-left: 2px solid #007bff;
-        padding-left: 20px;
-        margin-bottom: 20px;
-        position: relative;
-      }
-
-      .timeline-item::before {
-        content: "";
-        width: 15px;
-        height: 15px;
-        background-color: #007bff;
-        border-radius: 50%;
-        position: absolute;
-        left: -8px;
-        top: 0;
-      }
-
-      .profile-image {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 5px solid #007bff;
-      }
-
-      /* Added Styles */
-      .certificate-item {
-        margin-bottom: 20px;
-      }
-
-      .certificate-item .card-header {
-        background-color: #007bff;
-        color: white;
-      }
-    </style>
-  </head>
-
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">Esmaeil H. Alkhazmi</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#certifications">Certifications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#honors">Honors & Activities</a>
-            </li>
-          </ul>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        dark: '#1e293b'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="text-2xl font-bold text-primary">EHK</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-primary transition-colors">About</a>
+                    <a href="#experience" class="hover:text-primary transition-colors">Experience</a>
+                    <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+                    <a href="#certifications" class="hover:text-primary transition-colors">Certifications</a>
+                    <a href="#education" class="hover:text-primary transition-colors">Education</a>
+                </div>
+                <!-- Mobile menu button -->
+                <button class="md:hidden text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
         </div>
-      </div>
     </nav>
 
-    <header class="bg-primary text-white text-center py-5">
-      <div class="container">
-        <!-- You can add your image here -->
-        <!-- <img src="your-image.jpg" alt="Esmaeil H. Alkhazmi" class="profile-image mb-4"> -->
-        <h1 class="display-4">Esmaeil H. Alkhazmi</h1>
-        <p class="lead">Software Developer & Data Analyst</p>
-        <div class="mt-3">
-          <a href="mailto:ealkhazmi@gmail.com" class="btn btn-light me-2">
-            <i class="fas fa-envelope"></i> Email
-          </a>
-          <a
-            href="https://www.linkedin.com/in/esmaeil-hesham"
-            target="_blank"
-            class="btn btn-light me-2"
-          >
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-          <a
-            href="https://github.com/esmaeil-HRK"
-            target="_blank"
-            class="btn btn-light me-2"
-          >
-            <i class="fab fa-github"></i> GitHub
-          </a>
-          <!-- Add your portfolio link if you have one -->
-          <!-- <a href="your-portfolio-link" target="_blank" class="btn btn-light"><i class="fas fa-briefcase"></i> Portfolio</a> -->
+    <!-- Hero Section -->
+    <header class="pt-32 pb-16 bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-5xl font-bold mb-4">Esmaeil H. Alkhazmi</h1>
+                    <p class="text-xl mb-8 text-gray-200">Software Developer & Data Analyst</p>
+                    <div class="flex gap-4 justify-center md:justify-start">
+                        <a href="mailto:ealkhazmi@gmail.com" class="bg-white text-primary px-6 py-2 rounded-full hover:bg-gray-100 transition-colors">
+                            <i class="fas fa-envelope mr-2"></i>Email
+                        </a>
+                        <a href="https://www.linkedin.com/in/esmaeil-hesham" target="_blank" class="bg-white/10 text-white px-6 py-2 rounded-full hover:bg-white/20 transition-colors">
+                            <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                        </a>
+                        <a href="https://github.com/esmaeil-HRK" target="_blank" class="bg-white/10 text-white px-6 py-2 rounded-full hover:bg-white/20 transition-colors">
+                            <i class="fab fa-github mr-2"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-12 md:mt-0">
+                    <img src="Image.png" alt="Profile" class="w-64 h-64 rounded-full border-4 border-white shadow-lg mx-auto"/>
+                </div>
+            </div>
         </div>
-      </div>
     </header>
 
-    <main class="container mt-5">
-      <section id="about" class="mb-5">
-        <h2 class="section-title">About Me</h2>
-        <p>
-          A skilled software developer and data analyst with expertise in Python,
-          Software Development, and cloud technologies like AWS. Proven ability
-          to deliver innovative solutions, from OCR-based data conversion tools
-          to IoT monitoring systems. Adept at leveraging cutting-edge
-          technologies to drive operational excellence and enhance user
-          experiences. A passionate mentor dedicated to knowledge sharing and
-          community growth. Recognized for exceptional academic performance and
-          international collaboration.
-        </p>
-      </section>
+    <main class="container mx-auto px-4 py-8">
+        <section id="about" class="mb-20 ">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">About Me</span>
+                </h2>
+                
+                <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+                    <!-- Left Column - Personal Info -->
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-2xl shadow-md p-8 transform hover:scale-105 transition-transform duration-300">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-user text-primary text-xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+                                    Hello, World! 👋
+                                </h3>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed mb-4">
+                                I'm Esmaeil, a software developer and data analyst with a passion for turning complex problems into elegant solutions. Think of me as a tech-savvy problem solver who loves to build digital bridges between ideas and reality.
+                            </p>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">
+                                    <i class="fas fa-code mr-2"></i>Developer
+                                </span>
+                                <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">
+                                    <i class="fas fa-chart-line mr-2"></i>Analyst
+                                </span>
+                                <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">
+                                    <i class="fas fa-robot mr-2"></i>AI Enthusiast
+                                </span>
+                            </div>
+                        </div>
+        
+                        <!-- Quote Card -->
+                        <div class="bg-gradient-to-r from-primary to-secondary rounded-2xl shadow-md p-8 text-white">
+                            <i class="fas fa-quote-left text-4xl opacity-50 mb-4"></i>
+                            <p class="text-lg italic mb-4">
+                                "I believe in the power of technology to transform ideas into impact, and data into decisions."
+                            </p>
+                        </div>
+                    </div>
+        
+                    <!-- Right Column - Stats & Highlights -->
+                    <div class="space-y-6">
+                        <!-- Quick Stats -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white rounded-xl shadow-md p-6 text-center transform hover:scale-105 transition-transform duration-300">
+                                <div class="text-4xl font-bold text-primary mb-2">3.71</div>
+                                <div class="text-gray-600">GPA</div>
+                            </div>
+                            <div class="bg-white rounded-xl shadow-md p-6 text-center transform hover:scale-105 transition-transform duration-300">
+                                <div class="text-4xl font-bold text-primary mb-2">15+</div>
+                                <div class="text-gray-600">Projects</div>
+                            </div>
+                            <div class="bg-white rounded-xl shadow-md p-6 text-center transform hover:scale-105 transition-transform duration-300">
+                                <div class="text-4xl font-bold text-primary mb-2">5+</div>
+                                <div class="text-gray-600">Tech Talks</div>
+                            </div>
+                            <div class="bg-white rounded-xl shadow-md p-6 text-center transform hover:scale-105 transition-transform duration-300">
+                                <div class="text-4xl font-bold text-primary mb-2">1</div>
+                                <div class="text-gray-600">IEEE Paper</div>
+                            </div>
+                        </div>
+        
+                        <!-- Key Highlights -->
+                        <div class="bg-white rounded-2xl shadow-md p-8">
+                            <h4 class="text-xl font-semibold mb-4">🎯 Key Highlights</h4>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                                        <i class="fas fa-award text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">Top 5 Graduate</span>
+                                        <p class="text-gray-600 text-sm">Electrical and Electronics Engineering</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                                        <i class="fas fa-microchip text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">IoT Specialist</span>
+                                        <p class="text-gray-600 text-sm">Built multiple IoT monitoring systems</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                                        <i class="fas fa-users text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">Community Leader</span>
+                                        <p class="text-gray-600 text-sm">Passonate Advocate and Teacher</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Current Focus -->
+                <div class="mt-12 max-w-4xl mx-auto bg-white rounded-2xl shadow-md p-8">
+                    <h4 class="text-xl font-semibold mb-6 text-center">🎯 Current Focus</h4>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-brain text-primary text-2xl"></i>
+                            </div>
+                            <h5 class="font-medium mb-2">AI/ML</h5>
+                            <p class="text-gray-600 text-sm">Exploring machine learning applications</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-laptop-code text-primary text-2xl"></i>
+                            </div>
+                            <h5 class="font-medium mb-2">Web Development</h5>
+                            <p class="text-gray-600 text-sm">Learning Full-Stack Web Development</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-robot text-primary text-2xl"></i>
+                            </div>
+                            <h5 class="font-medium mb-2">IoT Innovation</h5>
+                            <p class="text-gray-600 text-sm">Smart systems development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <section id="experience" class="mb-5">
-        <h2 class="section-title">Work Experience</h2>
-        <div class="timeline-item">
-          <h4>Coordinator of Digital Services</h4>
-          <p class="text-muted">
-            Tanmia360 (Volunteer) | July 2024 - Present
-          </p>
-          <ul>
-            <li>Developed a room reservation system for coworking spaces.</li>
-            <li>
-              Managed and administered Microsoft 365, including email
-              registration, licensing, and technical support.
-            </li>
-            <li>
-              Obtained Canva Premium as a non-profit organization, created
-              accounts, and promoted creativity with Canva Teams.
-            </li>
-            <li>
-              Raised awareness about issues with the old paper-based systems
-              and proposed digital transformation solutions.
-            </li>
-            <li>
-              Conducted a training workshop on prompt engineering and
-              leveraging AI tools for enhancing work efficiency.
-            </li>
-          </ul>
-        </div>
-        <div class="timeline-item">
-          <h4>Dell Data Science and Big Data Analytics Trainee</h4>
-          <p class="text-muted">LATI | May 2024 - June 2024</p>
-          <ul>
-            <li>Intro to Programming with Python.</li>
-            <li>Math and Probability Theory.</li>
-            <li>Intro to AI and Machine Learning.</li>
-            <li>Pandas, NumPy, and Advanced AI with Python.</li>
-            <li>Training with Dell.</li>
-          </ul>
-        </div>
-        <div class="timeline-item">
-          <h4>Software Developer & Data Analyst</h4>
-          <p class="text-muted">Sarab Tech | January 2024 - April 2024</p>
-          <ul>
-            <li>Led data cleanup and analysis, enhancing dataset integrity.</li>
-            <li>
-              Developed data classification algorithms for user data insights.
-            </li>
-            <li>
-              Improved UI/UX for a bank's prepaid voucher card system using
-              Angular.
-            </li>
-            <li>Created a user management dashboard with Laravel.</li>
-          </ul>
-        </div>
-        <div class="timeline-item">
-          <h4>Freelance Specialist in Software Development</h4>
-          <p class="text-muted">January 2024 - Present</p>
-          <ul>
-            <li>
-              Led the development of an OCR-based project converting handwritten
-              tables to CSV using AWS and Flask.
-            </li>
-            <li>
-              Created a high-accuracy image recognition web app with machine
-              learning.
-            </li>
-            <li>
-              Delivered a professional, visually appealing website for a bakery
-              brand.
-            </li>
-          </ul>
-        </div>
-        <div class="timeline-item">
-          <h4>Research & Development Intern</h4>
-          <p class="text-muted">Rai Labs | October 2023 - January 2024</p>
-          <ul>
-            <li>
-              Developed a monitoring system with the TIG stack for environmental
-              control.
-            </li>
-            <li>
-              Created a digital logbook system for an Oil and Gas plant,
-              improving operational transparency.
-            </li>
-          </ul>
-        </div>
-        <div class="timeline-item">
-          <h4>Research & Development Intern</h4>
-          <p class="text-muted">
-            Ampere for Smart Systems | June 2022 - July 2023
-          </p>
-          <ul>
-            <li>
-              Designed a sensor data integration solution for real-time
-              analytics and historical reports.
-            </li>
-            <li>
-              Developed a VSD controller using Modbus for remote monitoring via
-              LoRaWAN.
-            </li>
-            <li>
-              Contributed to a smart irrigation system project using IoT
-              technologies.
-            </li>
-          </ul>
-        </div>
-      </section>
+        <!-- Experience Section -->
+        <section id="experience" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Work Experience</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-briefcase text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Coordinator of Digital Services</h3>
+                            <p class="text-gray-500 mb-4">Tanmia360 (Volunteer) | July 2024 - Present</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Developed a room reservation system for coworking spaces</li>
+                                <li>Managed and administered Microsoft 365</li>
+                                <li>Obtained Canva Premium as a non-profit organization</li>
+                                <li>Conducted training workshops on prompt engineering</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-laptop-code text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Dell Data Science and Big Data Analytics Trainee</h3>
+                            <p class="text-gray-500 mb-4">LATI | May 2024 - June 2024</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Intro to Programming with Python</li>
+                                <li>Math and Probability Theory</li>
+                                <li>Intro to AI and Machine Learning</li>
+                                <li>Training with Dell</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-code text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Software Developer & Data Analyst</h3>
+                            <p class="text-gray-500 mb-4">Sarab Tech | January 2024 - April 2024</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Led data cleanup and analysis, enhancing dataset integrity</li>
+                                <li>Developed data classification algorithms</li>
+                                <li>Improved UI/UX for bank's prepaid voucher system</li>
+                                <li>Created user management dashboard with Laravel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-project-diagram text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Research & Development Intern</h3>
+                            <p class="text-gray-500 mb-4">Rai Labs | October 2023 - January 2024</p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>Developed monitoring system with TIG stack</li>
+                                <li>Created digital logbook system for Oil and Gas plant</li>
+                                <li>Enhanced operational transparency through data integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <section id="skills" class="mb-5">
-        <h2 class="section-title">Skills</h2>
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">
-              Python (Flask, FastAPI, Streamlit, Pandas)
+        <!-- Skills Section -->
+        <section id="skills" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fab fa-python text-primary text-2xl mb-2"></i>
+                    <p>Python</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fab fa-aws text-primary text-2xl mb-2"></i>
+                    <p>AWS</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fab fa-angular text-primary text-2xl mb-2"></i>
+                    <p>Angular</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fab fa-vuejs text-primary text-2xl mb-2"></i>
+                    <p>Vue.js</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fab fa-laravel text-primary text-2xl mb-2"></i>
+                    <p>Laravel</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fas fa-microchip text-primary text-2xl mb-2"></i>
+                    <p>IoT Technologies</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fas fa-chart-bar text-primary text-2xl mb-2"></i>
+                    <p>Data Analysis</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fas fa-brain text-primary text-2xl mb-2"></i>
+                    <p>Machine Learning</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                    <i class="fas fa-code text-primary text-2xl mb-2"></i>
+                    <p>Software Development</p>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">AWS (EC2, Textract, IoT Core)</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">Angular</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">Vue.js</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">Laravel</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">IoT Technologies</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">Data Analysis</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">Machine Learning</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">TensorFlow</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">HTML5 / CSS3 / JavaScript</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">Bootstrap</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">InfluxDB</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">Grafana</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">MongoDB</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">Docker</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">ESP32 / Arduino</div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="skill-item">LoRaWAN</div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Certifications Section -->
-      <section id="certifications" class="mb-5">
-        <h2 class="section-title">Certifications</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="certificate-item">
-              <div class="card">
-                <div class="card-header">Dell</div>
-                <div class="card-body">
-                  <ul>
-                    <li>
-                      Data Scientist and Big Data Analytics Foundations
-                    </li>
-                    <li>GenAI Foundation</li>
-                  </ul>
+        <!-- Certifications Section -->
+        <section id="certifications" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Certifications</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="bg-primary text-white p-4">
+                        <h3 class="text-xl font-semibold">Dell</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                Data Scientist and Big Data Analytics Foundations
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                GenAI Foundation
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="certificate-item">
-              <div class="card">
-                <div class="card-header">Meta</div>
-                <div class="card-body">
-                  <ul>
-                    <li>Databases - Python</li>
-                    <li>Version Control</li>
-                    <li>Introduction to Back-End Development</li>
-                  </ul>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="bg-primary text-white p-4">
+                        <h3 class="text-xl font-semibold">Meta</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                Python
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                Databases
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                Introduction to Back-End Development
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="certificate-item">
-              <div class="card">
-                <div class="card-header">Mimo</div>
-                <div class="card-body">
-                  <ul>
-                    <li>HTML</li>
-                    <li>SQL</li>
-                  </ul>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="bg-primary text-white p-4">
+                        <h3 class="text-xl font-semibold">Sololearn</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                Python
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                Angular
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                Coding for Data
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                Tech for Everyone
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="certificate-item">
-              <div class="card">
-                <div class="card-header">Sololearn</div>
-                <div class="card-body">
-                  <ul>
-                    <li>Python</li>
-                    <li>Angular</li>
-                    <li>Coding for Data</li>
-                    <li>Tech for Everyone</li>
-                  </ul>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="bg-primary text-white p-4">
+                        <h3 class="text-xl font-semibold">Other Certifications</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                ION+: 70-hour Mobile Development Bootcamp
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                Tanmia360: Strategic Management
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                InfluxDB Essentials Badge
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-primary mr-2"></i>
+                                EF SET: C2 Proficient Level
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="certificate-item">
-              <div class="card">
-                <div class="card-header">Data Camp</div>
-                <div class="card-body">
-                  <ul>
-                    <li>Understanding Prompt Engineering</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="certificate-item">
-              <div class="card">
-                <div class="card-header">Other</div>
-                <div class="card-body">
-                  <ul>
-                    <li>
-                      ION+: 70-hour Mobile Development Bootcamp with Flutter
-                      Framework
-                    </li>
-                    <li>Tanmia360: Strategic Management Certification</li>
-                    <li>Influx Data: InfluxDB Essentials Badge</li>
-                    <li>
-                      EF SET: C2 Proficient Level in EF SET English Test
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="education" class="mb-5">
-        <h2 class="section-title">Education</h2>
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">
-              B.S. Electrical and Electronics Engineering
-            </h4>
-            <p class="card-text">University of Benghazi, Benghazi, Libya</p>
-            <p class="card-text"><strong>GPA:</strong> 3.71</p>
-            <p class="card-text"><strong>Graduation Year:</strong> 2023</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="honors" class="mb-5">
-        <h2 class="section-title">Honors & Activities</h2>
-        <ul class="list-group">
-          <li class="list-group-item">
-            Published an academic paper on LoRaWAN IoT network deployment (IEEE
-            ICSC2023)
-          </li>
-          <li class="list-group-item">
-            Recognized for exceptional academic performance, ranking among the
-            top five graduates
-          </li>
-          <li class="list-group-item">
-            Volunteered as a Lab Collaborator, guiding students in laboratory
-            experiments
-          </li>
-          <li class="list-group-item">
-            Published a multivariable calculus calculator app on Google Play
-          </li>
-          <li class="list-group-item">
-            Participated in Huawei's Seeds for the Future program, gaining ICT
-            and teamwork skills
-          </li>
-          <li class="list-group-item">
-            Excelled in cross-cultural communication through the Soliya Connect
-            Express program
-          </li>
-          <li class="list-group-item">
-            Speaker at Libyan National Technology Day "Smart Benghazi:
-            Harnessing IoT for a Brighter Future," discussing the growth of IoT,
-            benefits for smart cities
-          </li>
-          <li class="list-group-item">
-            Conducted a workshop titled "Mastering Prompt Engineering:
-            Leveraging AI for Your Engineering Projects" at the Engineering Expo
-            101, guiding students on effective use of AI tools for project
-            development
-          </li>
-          <li class="list-group-item">
-            Delivered a session on advanced prompt engineering for AI tools at
-            Google Developer Student Club
-          </li>
-        </ul>
-      </section>
+        <!-- Education Section -->
+        <section id="education" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Education</h2>
+            <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="p-8">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">B.S. Electrical and Electronics Engineering</h3>
+                            <p class="text-gray-500">University of Benghazi, Benghazi, Libya</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mt-4">
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <p class="text-sm text-gray-500">GPA</p>
+                            <p class="text-xl font-semibold">3.71</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <p class="text-sm text-gray-500">Graduation Year</p>
+                            <p class="text-xl font-semibold">2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-light text-center py-3 mt-5">
-      <div class="container">
-        <p>© 2024 Esmaeil H. Alkhazmi. All rights reserved.</p>
-      </div>
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">© 2024 Esmaeil H. Alkhazmi. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:ealkhazmi@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/esmaeil-hesham" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="https://github.com/esmaeil-HRK" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      // Add smooth scrolling to nav links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
-      });
     </script>
-  </body>
+</body>
 </html>
