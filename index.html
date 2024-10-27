@@ -5,24 +5,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Esmaeil H. Alkhazmi - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="PFP.png"" type="image/png" />
+    <link rel="icon" href="PFP.png" type="image/png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+              body {
+            background-color: #f4f4f7; /* Slightly darker background */
+            color: #4a5568; /* Darker text color (slate gray) */
+        }
+        /* Customizable Particle Styles */
+        #particles-js {
+            position: fixed; /* Fixed for parallax */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Behind other content */
+        }
+
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .skill-icon {
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        .skill-icon:hover {
+            transform: scale(1.2); /* Scale up on hover */
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.7); /* Reduced navbar opacity */
+        }
+
+
+        /* Style for cards/boxes */
+        .bg-white {
+            background-color: #f7fafc; /* Off-white/light gray background */
+        }
+
+        /* Reduce contrast on other white elements */
+        .border-white {
+            border-color: #e2e8f0; /* Light gray border */
+        }
+
+        /* Adjust text colors as needed */
+        .text-white {
+            color: #e2e8f0; /* Lighter text color on dark backgrounds */
+        }
+        
+    </style>
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         'primary': '#264653',    // Deep Teal
-                'secondary': '#2A9D8F',   // Sea Green
-                'accent': '#E9C46A',      // Golden Yellow
-                'background-highlight-1': '#F4A261', // Sandy Orange
-                'background-highlight-2': '#E76F51', // Terracotta
-                'dark': '#17252A',      // Dark Slate Gray for dark mode
+                        'secondary': '#2A9D8F',   // Sea Green
+                        'accent': '#E9C46A',      // Golden Yellow
+                        'background-highlight-1': '#F4A261', // Sandy Orange
+                        'background-highlight-2': '#E76F51', // Terracotta
+                        'dark': '#17252A',      // Dark Slate Gray for dark mode
+                    },
+                     fontFamily: {
+                        'roboto-mono': ['Roboto Mono', 'monospace'], // Add your font family
                     }
                 }
             }
         }
     </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-['Roboto_Mono']"> 
+                                <!-- Add font class here -->
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+<script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,  // Adjust the number of particles
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#38a169" // Slightly darker particle color
+                },
+                "shape": {
+                    "type": "circle", // You can use "circle", "edge", "triangle", "polygon", "star", "image"
+                    "stroke": {
+                        "width": 0,  // Set to 0 for no outline
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                },
+                "opacity": {
+                    "value": 0.4,   // Adjust opacity
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,  // Adjust particle size
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,  // Connect particles with lines
+                    "distance": 150,  // Adjust connection distance
+                    "color": "#38a169", // Line color
+                    "opacity": 0.3,    // Line opacity
+                    "width": 1          // Line width
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,         // Adjust particle speed
+                    "direction": "none",
+                    "random": false,    // Random movement or not
+                    "straight": false,  // Straight or curved movement
+                    "out_mode": "out",   // Behavior when particles go off-screen
+                    "bounce": false,
+                    "attract": {        // Enable particle attraction/repulsion
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas", // Detect mouse interactions on the canvas
+                "events": {
+                    "onhover": {
+                        "enable": true,     // Enable hover effects
+                        "mode": "grab"    // "grab" to attract particles to the mouse
+                    },
+                    "onclick": {
+                        "enable": true,       // Enable click effects
+                        "mode": "push"     // "push" to emit new particles
+                    },
+                    "resize": true        // Resize the canvas with the window
+                },
+                "modes": {
+
+                    "grab": {          // Settings for the "grab" mode
+                        "distance": 200, // Distance from mouse to affect particles
+                        "line_linked": {
+                            "opacity": 1   // Opacity of lines when grabbing
+                        }
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+
+                }
+            },
+            "retina_detect": true // For high-resolution displays
+        });
+
+
+  // ... (rest of your JavaScript)
+    </script>
+
 </head>
 <body class="bg-gray-50 text-gray-800">
     <!-- Navbar -->
@@ -112,11 +273,13 @@
                         </div>
         
                         <!-- Quote Card -->
-                        <div class="bg-gradient-to-r from-primary to-secondary rounded-2xl shadow-md p-8 text-white">
+                        <div class="bg-gradient-to-r from-primary to-secondary rounded-2xl shadow-md p-8 text-white transform hover:scale-105 transition-transform duration-300">
                             <i class="fas fa-quote-left text-4xl opacity-50 mb-4"></i>
                             <p class="text-lg italic mb-4">
                             "My code doesn’t always work, but when it does, I’m as surprised as anyone else."
+    
                             </p>
+                            <p class="text-base font-medium ">- Esmaeil H. Alkhazmi.</p>  
                         </div>
                     </div>
         
@@ -142,48 +305,48 @@
                             </div>
                         </div>
         
-                        <!-- Key Highlights -->
-                        <div class="bg-white rounded-2xl shadow-md p-8">
-                            <h4 class="text-xl font-semibold mb-4">🎯 Key Highlights</h4>
-                            <ul class="space-y-4">
-                                <li class="flex items-start">
-                                    <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
-                                        <i class="fas fa-award text-primary"></i>
-                                    </div>
-                                    <div>
-                                        <span class="font-medium">Top 5 Graduate</span>
-                                        <p class="text-gray-600 text-sm">My mom is very proud</p>
-                                    </div>
-                                </li>
-                                <li class="flex items-start">
-                                    <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
-                                        <i class="fas fa-microchip text-primary"></i>
-                                    </div>
-                                    <div>
-                                        <span class="font-medium">IoT Specialist</span>
-                                        <p class="text-gray-600 text-sm">Developed IoT monitoring systems to connect ideas with action</p>
-                                    </div>
-                                </li>
-                                <li class="flex items-start">
-                                    <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
-                                        <i class="fas fa-users text-primary"></i>
-                                    </div>
-                                    <div>
-                                        <span class="font-medium">Community Leader</span>
-                                        <p class="text-gray-600 text-sm">Advocating for Digital Transformation in Libya</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                     <!-- Key Highlights -->
+                <div class="bg-white rounded-2xl shadow-md p-8 transform hover:scale-105 transition-transform duration-300">
+                    <h4 class="text-xl font-semibold mb-4">🎯 Key Highlights</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                                <i class="fas fa-award text-primary"></i>
+                            </div>
+                            <div>
+                                <span class="font-medium">Top 5 Graduate</span>
+                                <p class="text-gray-600 text-sm">My mom is very proud</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                                <i class="fas fa-microchip text-primary"></i>
+                            </div>
+                            <div>
+                                <span class="font-medium">IoT Specialist</span>
+                                <p class="text-gray-600 text-sm">Built multiple IoT monitoring systems</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                                <i class="fas fa-users text-primary"></i>
+                            </div>
+                            <div>
+                                <span class="font-medium">Community Leader</span>
+                                <p class="text-gray-600 text-sm">Advocating for Digital Transformation in Libya</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                     </div>
                 </div>
         
                 <!-- Current Focus -->
-                <div class="mt-12 max-w-4xl mx-auto bg-white rounded-2xl shadow-md p-8">
+                <div class="mt-12 max-w-4xl mx-auto bg-white rounded-2xl shadow-md p-8 transform hover:scale-105 transition-transform duration-300">
                     <h4 class="text-xl font-semibold mb-6 text-center">🎯 Current Focus</h4>
                     <div class="grid md:grid-cols-3 gap-6">
                         <div class="text-center">
-                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto  ">
                                 <i class="fas fa-laptop-code text-primary text-2xl"></i>
                             </div>
                             <h5 class="font-medium mb-2">Web Development</h5>
@@ -288,8 +451,8 @@
                             <h3 class="text-xl font-semibold">Research & Development Intern</h3>
                             <p class="text-gray-500 mb-4">Ampere for Smart Systems | June 2022 - July 2023</p>
                             <ul class="list-disc list-inside text-gray-600 space-y-2">
-                                <li>Designed a sensor data integration solution for real-time analytics and reports.</li>
-                                <li>Developed a VSD controller using Modbus for remote monitoring via LoRaWAN.</li>
+                                <li>Designed a sensor data integration solution for analytics and reporing.</li>
+                                <li>Developed a VSD controller for remote monitoring via LoRaWAN.</li>
                                 <li>Contributed to a smart irrigation system project using IoT technologies.</li>
                             </ul>
                         </div>
@@ -342,16 +505,16 @@
         </section>
 
         <!-- Certifications Section -->
-        <section id="certifications" class="mb-20">
+        <section id="certifications" class="mb-20 ">
             <h2 class="text-3xl font-bold mb-8 text-center">Certifications</h2>
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
-                    <div class="bg-primary text-white p-4">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 ">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="bg-primary text-white p-4  ">
                         <h3 class="text-xl font-semibold">Dell</h3>
                     </div>
-                    <div class="p-6">
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
+                    <div class="p-6 ">
+                        <ul class="space-y-2 ">
+                            <li class="flex items-center ">
                                 <i class="fas fa-certificate text-primary mr-2"></i>
                                 Data Scientist and Big Data Analytics Foundations
                             </li>
@@ -362,7 +525,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
                     <div class="bg-primary text-white p-4">
                         <h3 class="text-xl font-semibold">Meta</h3>
                     </div>
@@ -384,7 +547,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
                     <div class="bg-primary text-white p-4">
                         <h3 class="text-xl font-semibold">Sololearn</h3>
                     </div>
@@ -410,7 +573,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
                     <div class="bg-primary text-white p-4">
                         <h3 class="text-xl font-semibold">Other Certifications</h3>
                     </div>
@@ -441,7 +604,7 @@
         <!-- Education Section -->
         <section id="education" class="mb-20">
             <h2 class="text-3xl font-bold mb-8 text-center">Education</h2>
-            <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
                 <div class="p-8">
                     <div class="flex items-center gap-4 mb-4">
                         <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
@@ -467,7 +630,7 @@
         </section>
     </main>
 
-    <footer class="bg-dark text-white py-12">
+    <footer class="bg-dark text-white py-6">
         <div class="container mx-auto px-4 text-center">
             <p class="mb-4">© 2024 Esmaeil H. Alkhazmi. All rights reserved.</p>
             <div class="flex justify-center space-x-6">
@@ -505,6 +668,8 @@
                 console.log('Menu button clicked'); // Debugging: Check if click event is detected
             });
         });
+
+        
     </script>
 </body>
 </html>
