@@ -1,10 +1,10 @@
 # Esmaeil Alkhazmi Portfolio
 
-Welcome to **Esmaeil Alkhazmi Portfolio**! This repository hosts the personal portfolio website of Esmaeil Alkhazmi, built entirely with HTML.
+Welcome to **Esmaeil Alkhazmi Portfolio**! This repository hosts the personal portfolio website of Esmaeil Alkhazmi, built entirely with HTML,CSS,JS.
 
 ## Overview
 
-This repository serves as the source for Esmaeil Alkhazmi's online portfolio. It showcases projects, professional experience, skills, and contact information, all presented in a clean and simple HTML format.
+This repository serves as the source for Esmaeil Alkhazmi's online portfolio. It showcases projects, professional experience, skills, and contact information, all presented in a clean and simple HTML,CSS,JS.
 
 ## Features
 
